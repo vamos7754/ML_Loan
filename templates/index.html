@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ML API</title>
+    </head>
+    <body>
+    <div>
+        <h1>Loan Default Prediction ML Algorithm</h1>
+        <form method="POST", action = "{{url_for('predict')}}">
+            <label for="credit_policy">credit_policy</label>
+            <p><input type = "text" name="credit_policy" placeholder="credit_policy"></p>
+            <br>
+            <label for="purpose">purpose</label>
+            <p><input type = "text" name="purpose" placeholder="purpose"></p>
+            <br>
+            <label for="int_rate">int_rate</label>
+            <p><input type = "text" name="int_rate" placeholder="int_rate"></p>
+            <br>
+            <label for="installment">installment</label>
+            <p><input type = "text" name="installment" placeholder="installment"></p>
+            <br>
+            <label for="log_annual_inc">log_annual_inc</label>
+            <p><input type = "text" name="log_annual_inc" placeholder="log_annual_inc"></p>
+            <br>
+            <label for="dti">dti</label>
+            <p><input type = "text" name="dti" placeholder="dti"></p>
+            <br>
+            <label for="fico">fico</label>
+            <p><input type = "text" name="fico" placeholder="fico"></p>
+            <br>
+            <label for="days_with_cr_line">days_with_cr_line</label>
+            <p><input type = "text" name="days_with_cr_line" placeholder="days_with_cr_line"></p>
+            <br>
+            <label for="revol_bal">revol_bal</label>
+            <p><input type = "text" name="revol_bal" placeholder="revol_bal"></p>
+            <br>
+            <label for="revol_util">revol_util</label>
+            <p><input type = "text" name="revol_util" placeholder="revol_util"></p>
+            <br>
+            <label for="inq_last_6mths">inq_last_6mths</label>
+            <p><input type = "text" name="inq_last_6mths" placeholder="inq_last_6mths"></p>
+            <br>
+            <label for="delinq_2yrs">delinq_2yrs</label>
+            <p><input type = "text" name="delinq_2yrs" placeholder="delinq_2yrs"></p>
+            <br>
+            <label for="pub_rec">pub_rec</label>
+            <p><input type = "text" name="pub_rec" placeholder="pub_rec"></p>
+            <br>
+            <input type="submit" value="predict" onclick="predict()">
+        </form>
+    </div>
+    </body>
+</html>
